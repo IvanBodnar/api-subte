@@ -15,7 +15,8 @@
   "dependencies": {
     "csv-parse": "^4.0.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14"
+    "mongoose": "^5.3.14",
+    "wellknown": "^0.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
