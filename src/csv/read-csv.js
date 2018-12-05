@@ -1,7 +1,7 @@
-import parse from 'csv-parse/lib/sync';
-import fs from 'fs';
+const parse = require('csv-parse/lib/sync');
+const fs = require('fs');
 
-const csvPromise = (fileName) => {
+const readCsv = (fileName) => {
     return new Promise( (resolve, reject) => {
         fs.readFile( fileName, ( err, data ) => {
             if (err) return reject(err);
@@ -11,4 +11,8 @@ const csvPromise = (fileName) => {
 };
 
 
-export default csvPromise('src/csv/lineas.csv');
+module.exports = {
+    readLineas: readCsv('src/csv/lineas.csv'),
+    readEstaciones: readCsv('src/csv/estaciones.csv')
+};
+
