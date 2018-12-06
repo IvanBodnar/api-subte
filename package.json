@@ -7,12 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch:build": "webpack --watch",
-    "serve": "nodemon \"./build/bundle.js\" --watch"
+    "serve": "nodemon \"./build/bundle.js\" --watch",
+    "serve:simple": "nodemon ./src/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "csv-parse": "^4.0.1",
     "express": "^4.16.4",
     "mongoose": "^5.3.14",
