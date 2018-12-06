@@ -1,4 +1,4 @@
-const Linea = require('../db/db').Linea;
+const Linea = require('../db/models').Linea;
 
 
 const getLineas = async (req, res, next) => {

@@ -1,8 +1,8 @@
 const readLineas = require('../csv/read-csv').readLineas;
 const readEstaciones = require('../csv/read-csv').readEstaciones;
-const connection = require('./db').connection;
-const Linea = require('./db').Linea;
-const Estacion = require('./db').Estacion;
+const connection = require('./models').connection;
+const Linea = require('./models').Linea;
+const Estacion = require('./models').Estacion;
 const wk = require('wellknown');
 
 const mongoose = connection();
