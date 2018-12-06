@@ -1,0 +1,1 @@
+const Estacion = require('../db/models').Estacion;
