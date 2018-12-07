@@ -33,7 +33,7 @@ readEstaciones
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [element.long, element.lat]
+                        coordinates: [+element.long, +element.lat]
                     },
                     properties: {
                         estacion: element.estacion,
